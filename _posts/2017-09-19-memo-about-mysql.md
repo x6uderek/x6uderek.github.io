@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 备忘录——mysql相关
-date: 2017-9-19
+date: 2017-09-19 08:55:00
 categories: blog
 tags: [mysql]
 description: 备忘录——mysql相关
