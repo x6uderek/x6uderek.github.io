@@ -257,6 +257,7 @@ if ($result->getPurchaseState() != 0) {
     throw new Exception(11006);
 }
 ```
+
 ## 三、接入firebase
 
 ### 1、在`android-sdk\extras\google\m2repository\com\google\firebase`找到firebase-common、firebase-message和firebase-iid。这3个是实现推送功能的最小集合，firebase-analytics、firebase-analytics-impl是firebase统计功能，firebase-crash是崩溃信息统计，这些都是可选的。

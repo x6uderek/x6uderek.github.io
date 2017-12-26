@@ -20,7 +20,7 @@ OpenGL ES是精简版的OpenGL，没有绘制四边形的函数，因此只能�
 
 例如：要绘制以下多边形
 
-![多边形1](http://derekblog-upload.stor.sinaapp.com/2016_02/6474f75b6a16b08b5ee3fc0270ffd01f.png)
+![多边形1]({{ site.static }}img/tri1.png)
 
 vertex数组中有v1-v5的坐标点，其index分别为0-4
 
@@ -41,7 +41,7 @@ vertex数组中有v1-v5的坐标点，其index分别为0-4
 
 但是这种方式有些限制：如果需要绘制的三角形不能公用一个顶点，那么他就不能一次完成整个绘制。比如
 
-![多边形2](http://derekblog-upload.stor.sinaapp.com/2016_02/274884a5cf4272fb97d554946387ed29.png)
+![多边形2]({{ site.static }}img/tri2.png)
 
 这个多边形使用`GL_TRIANGLE_FAN`就不能一次绘制
 
@@ -61,9 +61,13 @@ vertex数组中有v1-v5的坐标点，其index分别为0-4
 
 还有一个问题：如果需要绘制的图形不是条带状怎么办？如下图
 
-![多边形3](http://derekblog-upload.stor.sinaapp.com/2016_02/c42f819c4ec698a510c5767fa9b79f92.png)
+![多边形3]({{ site.static }}img/tri3.png)
 
-如果指定索引为`[0,4,1,5,2,6,3,7,4,8,5,9,6,10,7,11]`,那么将会产生预期之外的三角形：`[3,7,4][7,4,8]`
+如果指定索引为
+```java
+[0,4,1,5,2,6,3,7,4,8,5,9,6,10,7,11]
+```
+那么将会产生预期之外的三角形：`[3,7,4][7,4,8]`
 
 解决方法是插入额外的索引形成无法构建的三角形，OpenGL将自动跳过这些三角形，像这样：
 ```java

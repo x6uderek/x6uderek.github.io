@@ -22,7 +22,7 @@ npm install socket.io
 ```
 Windows下安装包为我们提供了npm环境，如下图
 
-![图1](http://derekblog-upload.stor.sinaapp.com/2016_02/049e01cb3d5ff79ec5d14bab9b6abacd.jpg)
+![图1]({{ site.static }}img/049e01cb3d5ff79ec5d14bab9b6abacd.jpg)
 
 socket.io会被安装在当前目录，如果要在项目里面使用，必须先 cd 到项目目录，不同的项目需要安装多次
 
