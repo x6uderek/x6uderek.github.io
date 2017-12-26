@@ -5,7 +5,7 @@ tagline: "cn"
 description: "许然的博客"  # 一句话描述你的博客
 baseurl: ""
 url: "https://x6uderek.github.io"  # 此处填写你的博客地址
-static: "site" #tuliu base url
+static: "/" #tuliu base url
 
 # About/contact
 owner:
