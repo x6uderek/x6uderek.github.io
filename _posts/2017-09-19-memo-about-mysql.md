@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 备忘录——mysql相关
 date: 2017-9-19
 categories: blog
