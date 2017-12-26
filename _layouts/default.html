@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head.html %}
+</head>
+
+<body>
+<a name="top"></a>
+<div class="blog-masthead">
+    <div class="container">
+        {% include nav.html %}
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-9 blog-main">
+            {{ content }}
+        </div>
+
+        <div class="col-sm-3 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 关于</h4>
+                <ol class="list-unstyled">
+                    <li><a target="_blank" href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a></li>
+                    <li><a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">新浪微博</a></li>
+                </ol>
+            </div>
+
+            <div class="sidebar-module">
+                <h4><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Tags</h4>
+                {% include tags.html %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% include foot.html %}
+</body>
+</html>

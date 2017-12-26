@@ -1,0 +1,33 @@
+---
+layout: page
+description: "首页列表"
+---
+
+{% for post in paginator.posts %}
+<div class="blog-post">
+    <h2 class="blog-post-title">
+        <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <p class="blog-post-meta">
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.publishTime }}
+    </p>
+    {{ post.content | strip_html | truncate:150 }}
+    <a class="more" target="_blank" href="{{ post.url | prepend: site.baseurl }}">...</a>
+</div>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

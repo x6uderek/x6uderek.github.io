@@ -1,0 +1,45 @@
+# Site settings
+title: Derek's Blog # 你的博客名字，可以定义修订
+header-img: "img/green.jpg"
+tagline: "cn"
+description: "许然的博客"  # 一句话描述你的博客
+baseurl: ""
+url: "https://x6uderek.github.io"  # 此处填写你的博客地址
+static: "site" #tuliu base url
+
+# About/contact
+owner:
+  name: "Derek" # 填写作者信息：名字
+  email: 1056811254@qq.com # 填写作者信息：邮箱
+  bio: "许然的博客" # 填写作者信息：博客描述
+
+# Data
+gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+
+github_username: x6uderek
+weibo_username: derekxu
+facebook_username: derek.xu.92
+
+# Build settings
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "derek" # 你的名字
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
