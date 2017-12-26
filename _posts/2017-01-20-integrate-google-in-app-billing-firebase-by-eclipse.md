@@ -420,7 +420,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ['content-Type:application/json', 'Authoriz
 $res = curl_exec($ch);
 ```
 参考资料：
-1. [The Google Services Gradle Plugin | Firebase][1]
+1. [The Google Services Gradle Plugin \| Firebase][1]
 2. [Dan Dar3: Eclipse: Integrate Firebase Analytics into your Android app][2]
 
 [1]: <https://firebase.google.com/docs/reference/gradle/#processing_the_json_file>
