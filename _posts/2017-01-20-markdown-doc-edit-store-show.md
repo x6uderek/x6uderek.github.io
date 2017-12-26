@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Markdown文档编辑，保存和展现
 date: 2017-01-20 03:08:00
 categories: blog
@@ -42,6 +42,7 @@ var result = md.render('# markdown-it rulezz!');
 2. 使用ajax，请求plain text类型的内容，这个方法需求请求两次服务器。
 
 3. 输出到html标签，再使用dom.innerHTML属性。但是innerHTML属性是经过HTML转义过的，需要decode回来。代码如下
+
 ```javascript
 var md = window.markdownit();
 var dom = document.getElementById('md-content');

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 利用gb2312编码生成随机汉字
 date: 2017-05-10 08:18:00
 categories: blog

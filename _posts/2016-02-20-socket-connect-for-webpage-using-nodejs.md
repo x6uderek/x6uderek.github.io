@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 使用nodejs+socket.io与页面通讯
 date: 2016-02-20 16:48:00
 categories: blog

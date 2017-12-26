@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: OpenGL ES绘制多边形
 date: 2016-02-23 17:51:00
 categories: blog

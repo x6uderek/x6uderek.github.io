@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Android OpenGL ES拾取（使用Java）
 date: 2016-02-20 11:50:00
 categories: blog

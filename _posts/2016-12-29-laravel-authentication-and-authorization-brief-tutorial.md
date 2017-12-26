@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: laravel认证与权限系统简明教程
 date: 2016-12-29 08:55:00
 categories: blog

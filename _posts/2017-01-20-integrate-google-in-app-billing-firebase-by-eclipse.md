@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "eclipse接入google In-App-Billing和firebase"
 date: 2017-01-20 03:13:00
 categories: blog
