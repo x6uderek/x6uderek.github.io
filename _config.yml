@@ -32,13 +32,6 @@ exclude: ["less","node_modules","Gruntfile.js","README.md"]
 
 permalink: /:title.html
 
-autopages:
-  enabled: true
-  tags:
-    layouts:
-      - autopage_tags.html
-    enabled: true
-
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
 
