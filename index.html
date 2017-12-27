@@ -11,7 +11,7 @@ description: "首页列表"
         <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     <p class="blog-post-meta">
-        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.date | date:"%Y-%m-%d %H:%i" }}
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.date | date:"%Y-%m-%d %H:%M" }}
     </p>
     {{ post.content | strip_html | truncate:200 }}
     <a class="more" target="_blank" href="{{ post.url | prepend: site.baseurl }}">...</a>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: laravel认证与权限系统简明教程
-date: 2016-12-29 08:55:00
+date: 2016-12-29 12:49:00
 categories: blog
 tags: [laravel,middleware]
 description: laravel认证与权限系统简明教程
