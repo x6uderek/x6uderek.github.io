@@ -15,7 +15,7 @@ description: "首页列表"
         <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.date | date:"%Y-%m-%d %H:%M" }}
     </p>
     {{ post.content | strip_html | truncate:200 }}
-    <a class="more" target="_blank" href="{{ post.url | prepend: site.baseurl }}">...</a>
+    <a class="more" target="_blank" href="{{ post.url | prepend: site.baseurl }}">详细</a>
 </div>
 {% endfor %}
 
