@@ -1,7 +1,5 @@
 <nav class="blog-nav">
-    {% for my_page in site.pages %}
-    {% if my_page.title and my_page.autogen == nil %}
-    <a class="blog-nav-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-    {% endif %}
-    {% endfor %}
+    <a class="blog-nav-item" href="/">首页</a>
+    <a class="blog-nav-item" href="/tags">Tags</a>
+    <a class="blog-nav-item" href="/link">友情链接</a>
 </nav>
