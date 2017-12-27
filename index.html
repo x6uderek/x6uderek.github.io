@@ -11,7 +11,7 @@ description: "首页列表"
         <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     <p class="blog-post-meta">
-        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.date }}
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ post.date | date:"%Y-%m-%d %H:%i" }}
     </p>
     {{ post.content | strip_html | truncate:200 }}
     <a class="more" target="_blank" href="{{ post.url | prepend: site.baseurl }}">...</a>
@@ -33,10 +33,3 @@ description: "首页列表"
     {% endif %}
 </ul>
 {% endif %}
-
-
-{% for my_page in site.pages %}
-{% if my_page.title and my_page.autogen != nil %}
-<a  href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a><br/>
-{% endif %}
-{% endfor %}
