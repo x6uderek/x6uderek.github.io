@@ -1,5 +1,5 @@
 <nav class="blog-nav">
-    <a class="blog-nav-item" href="/">首页</a>
-    <a class="blog-nav-item" href="/tags">Tags</a>
-    <a class="blog-nav-item" href="/link">友情链接</a>
+    <a class="blog-nav-item {% if page.nav == 'home' %}active{% endif %}" href="/">首页</a>
+    <a class="blog-nav-item {% if page.nav == 'tags' %}active{% endif %}" href="/tags">Tags</a>
+    <a class="blog-nav-item {% if page.nav == 'link' %}active{% endif %}" href="/link">友情链接</a>
 </nav>

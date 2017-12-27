@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Tags"
+nav: tags
 description: "tags"
 ---
 

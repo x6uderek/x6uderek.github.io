@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "友情链接"
+nav: link
 description: "友情链接"
 ---
 
