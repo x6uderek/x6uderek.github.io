@@ -13,7 +13,7 @@ nav: detail
     <div id="content_container">{{ content }}</div>
     <div class="tags">
         {% for tag in page.tags %}
-        <a href="{{ tag }}" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> {{ tag }}</a>
+        <a href="/tags#{{ tag }}" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> {{ tag }}</a>
         {% endfor %}
     </div>
 </div>
