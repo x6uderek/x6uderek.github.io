@@ -26,7 +26,7 @@ GB2312编码范围：A1A1－FEFE，其中汉字的编码范围为B0A1-F7FE，第
 for($i = 0xB0; $i <= 0xF7; $i++) {
 	echo sprintf("%X:",$i);
 	for($j = 0xA1; $j <= 0xFE; $j++) {
-		if($i==0xD7 && $j>=0xFA) {
+		if($i==0xD7 && $j>=0xFA) {  //D7 后面缺5个，没有对应汉字。
 			break;
 		}
 		$a = hex2bin(sprintf("%X%X",$i,$j));
@@ -34,6 +34,18 @@ for($i = 0xB0; $i <= 0xF7; $i++) {
 	}
 	echo '<br/>';
 }
+```
+
+一下方法可以产生一个随机常用字
+```php
+$qu = rand(0xB0, 0xD7); //D7以后都是不常用汉字
+if($qu == 0xD7) {
+	$wei = rand(0xA1, 0xF9);
+}
+else {
+	$wei = rand(0xA1, 0xFE);
+}
+echo iconv('gb2312','utf-8',hex2bin(sprintf("%X%X",$qu,$wei)));
 ```
 
 参考资料：
