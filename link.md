@@ -20,12 +20,6 @@ description: "友情链接"
         <small>分享你的知识、经验和见解</small>
     </div>
     <div class="col-md-4">
-        <a href="http://sae.sina.com.cn/" target="_blank">
-            <img src="{{env('STATIC_PATH')}}img/link/sae.ico" />SAE
-        </a>
-        <small>Sina App Engine</small>
-    </div>
-    <div class="col-md-4">
         <a href="http://www.bilibili.com/" target="_blank">
             <img src="{{env('STATIC_PATH')}}img/link/bilibili.ico" />哔哩哔哩
         </a>
